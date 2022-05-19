@@ -61,7 +61,7 @@ const scrollBar = ref(null)
 
 <template>
   <div
-    class="flex flex-col justify-evenly items-center h-52 w-full bg-fixed bg-cover bg-bottom bg-no-repeat bg-[url('https://i.ibb.co/gSYkT3J/bg-img-2.jpg')]  bg-gray-900 ">
+    class="flex flex-col justify-evenly items-center h-52 w-full bg-fixed bg-cover bg-bottom bg-no-repeat bg-[url('https://i.ibb.co/FmgVyy0/bg-img.jpg')]  bg-gray-900 ">
     <CustomSearch @onSearch="handleSearch" @onSelect="handleSelect" />
     <h1 class="text-2xl font-semibold text-white text-opacity-95">Visite • Create • Save Recipes</h1>
   </div>
