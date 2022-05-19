@@ -123,7 +123,7 @@ const onImageSelected = ({ target }) => {
     </div>
 
     <div
-      class="flex flex-col items-center py-2 h-[25vh] w-full bg-fixed bg-cover bg-left-bottom bg-no-repeat bg-[url('https://i.ibb.co/FmgVyy0/bg-img.jpg')]">
+      class="flex flex-col items-center py-2 h-[25vh] w-full bg-fixed bg-cover bg-left-bottom bg-no-repeat bg-[url('https://i.ibb.co/gSYkT3J/bg-img-2.jpg')]">
       <h1 class="text-2xl font-bold text-white_soft text-opacity-95">Create Recipes</h1>
     </div>
 
