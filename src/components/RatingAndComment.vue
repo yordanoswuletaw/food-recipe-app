@@ -145,7 +145,7 @@ const rate = (index) => {
                 :key="i">
                 <h2 class="font-bold">{{ review?.user?.username }}</h2>
                 <div class="flex items-center" v-if="review?.rate > 0" >
-                    <IconStar v-for="i in 5" :key="i" :fill="i <= review?.rate ? true : null"
+                    <IconStar v-for="i in 6" :key="i" :fill="i <= review?.rate ? true : null"
                         class="text-dark_orange px-0.5 w-5 h-5" />
                 </div>
                 <p class="px-0.5">{{ review?.comment }}</p>
