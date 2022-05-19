@@ -5,7 +5,6 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    AllReviews: typeof import('./src/components/AllReviews.vue')['default']
     Bookmarks: typeof import('./src/components/Bookmarks.vue')['default']
     Button: typeof import('./src/components/buttons/Button.vue')['default']
     CollectionsCard: typeof import('./src/components/cards/CollectionsCard.vue')['default']
@@ -28,7 +27,6 @@ declare module '@vue/runtime-core' {
     IconForwardArrow: typeof import('./src/components/icons/IconForwardArrow.vue')['default']
     IconImage: typeof import('./src/components/icons/IconImage.vue')['default']
     IconLoading: typeof import('./src/components/icons/IconLoading.vue')['default']
-    IconLogout: typeof import('./src/components/icons/IconLogout.vue')['default']
     IconRecipe: typeof import('./src/components/icons/IconRecipe.vue')['default']
     IconRight: typeof import('./src/components/icons/IconRight.vue')['default']
     IconSearch: typeof import('./src/components/icons/IconSearch.vue')['default']
@@ -39,7 +37,6 @@ declare module '@vue/runtime-core' {
     IconTime: typeof import('./src/components/icons/IconTime.vue')['default']
     IconWrong: typeof import('./src/components/icons/IconWrong.vue')['default']
     Ingredients: typeof import('./src/components/Ingredients.vue')['default']
-    LikeAndBookmark: typeof import('./src/components/LikeAndBookmark.vue')['default']
     Likes: typeof import('./src/components/Likes.vue')['default']
     Loading: typeof import('./src/components/utils/Loading.vue')['default']
     MobileDrawer: typeof import('./src/components/navigation/MobileDrawer.vue')['default']
