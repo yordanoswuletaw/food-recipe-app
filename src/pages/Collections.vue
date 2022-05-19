@@ -19,7 +19,7 @@ const collectionsResult = computed(() => result.value?.collections ?? [])
 
 <template>
   <div
-    class=" flex flex-col justify-evenly items-center h-36 w-full bg-fixed bg-center  bg-no-repeat bg-[url('https://i.ibb.co/gSYkT3J/bg-img-2.jpg')]  bg-gray-900 bg-opacity-0">
+    class=" flex flex-col justify-evenly items-center h-36 w-full bg-fixed bg-bottom  bg-no-repeat bg-[url('https://i.ibb.co/gSYkT3J/bg-img-2.jpg')]  bg-gray-900 bg-opacity-0">
     <h1 class="text-3xl font-bold text-white  text-opacity-90">Your Recipes
     </h1>
     <h1 class="text-2xl font-semibold text-white_soft text-opacity-95">Visite • Create • Save Recipes</h1>
