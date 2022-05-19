@@ -1,0 +1,9 @@
+.round-button{
+    @apply flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-500  bg-white border-2 border-transparent rounded-full shadow-sm
+}
+.round-button:hover{
+    @apply text-white border-white bg-transparent
+}
+.round-button:focus{
+    @apply outline-none
+}

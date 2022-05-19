@@ -1,0 +1,45 @@
+/* semantic color variables for this project */
+:root {
+    @apply bg-white_soft text-black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @apply bg-white_soft text-black;
+    /* @apply bg-dark_violet text-white_soft; */
+  }
+}
+
+
+*,
+*::before,
+*::after {
+  @apply m-0 p-0 box-border;  
+}
+
+::-webkit-scrollbar{
+  width: 4px;
+  height: 0;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #2f2e41;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #181818;
+}
+
+
+body {
+
+  @apply min-h-screen transition-colors font-app_font;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
