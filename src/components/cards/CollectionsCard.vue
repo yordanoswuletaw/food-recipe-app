@@ -65,7 +65,7 @@ const gotoDetails = () => {
       </div>
       <div class="w-fit mr-0.5 h-fit flex items-center text-orange-400 rounded-full p-1">
         <IconStar class="w-4 h-4" :fill="recipe.is_rated" />
-        <p class="pl-0.5 text-sm font-medium">{{ recipe.total_rate == null ? 0 : recipe.total_rate }}</p>
+        <p class="pl-0.5 text-sm font-medium">{{ recipe.total_rate == null ? 0 : Number.isInteger(recipe.total_rate) ? recipe.total_rate : recipe.total_rate.toFixed(1) }}</p>
       </div>
       <div class="w-fit mr-0.5 h-fit flex items-center text-black rounded-full p-1">
         <IconComment class="w-4 h-4" :fill="recipe.is_commented" />

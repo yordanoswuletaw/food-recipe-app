@@ -88,7 +88,7 @@ const changeSrc = (index) => {
               <IconStar v-for="i in 5" :key="i" class="mx-0.5 w-4 h-4"
                 :fill="i <= totalReviews?.total_rate ? true : null" />
             </div>
-            {{ totalReviews?.total_rate === null ? 0 : totalReviews?.total_rate }} ratings
+            {{ totalReviews?.total_rate === null ? 0 : Number.isInteger(totalReviews?.total_rate) ? totalReviews?.total_rate : totalReviews?.total_rate?.toFixed(1) }} ratings
           </TextIconBtn>
           <TextIconBtn class="m-1 text-black w-12">
             <IconComment class="mx-1.5 w-4 h-4" />
