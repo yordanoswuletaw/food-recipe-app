@@ -69,7 +69,7 @@ onUnmounted(() => {
                 </div>
             </div>
         </div>
-        <div class="ring-1 ring-gray-500 w-full py-1.5 mb-1.5 rounded-md" v-if="!store.state.user">
+        <div class="ring-1 ring-gray-500 w-full py-1.5 mb-1.5 mr-0.5 rounded-md" v-if="!store.state.user">
             <RouterLink to="/authpage?page=signup"
                 class="pl-[16px] text-dark font-semibold cursor-pointer uppercase transition-all ease-linear duration-200 hover:text-dark_orange">
                 Sign up </RouterLink>
