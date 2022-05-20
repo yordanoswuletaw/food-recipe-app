@@ -63,7 +63,7 @@ const gotoDetails = ()=>{
             }}</h5>
 
             <p class="text-sm overflow-hidden mb-0.5 w-full  h-[2.4rem]  text-black break-all">{{
-                    recipe.description.length > 72 ? `${recipe.description.slice(0,70)}...` : recipe.description
+                    recipe.description.length > 67 ? `${recipe.description.slice(0,68)}...` : recipe.description
             }}</p>
         </div>
 
