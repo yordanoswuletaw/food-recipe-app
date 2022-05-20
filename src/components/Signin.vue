@@ -36,7 +36,7 @@ const onSignin = handleSubmit(async (values) => {
             setFieldValue('password', "")
         }
     } catch (error) {
-        errorMsg.value = "Incorrect password or email address!";
+        errorMsg.value = "Something went wrong please try agin!";
         loading.value = false;
         setFieldValue('password', "")
     }
