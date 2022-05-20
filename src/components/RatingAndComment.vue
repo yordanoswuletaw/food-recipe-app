@@ -49,11 +49,11 @@ watchEffect(() => {
 const handleSubmit = (e) => {
     if (store.state.user) {
         if (props.recipeId) {
-            if (rateData.value.includes(true) && comment.value) {
+            if (rateData.value.lastIndexOf(true) > 0 && comment.value) {
                 rateR({
                     recipeId: props.recipeId,
                     userId: store.state.user.id,
-                    rateValue: rateData.value.lastIndexOf(true) -1
+                    rateValue: rateData.value.lastIndexOf(true)
                 })
                 commentR({
                     recipeId: props.recipeId,
@@ -65,11 +65,11 @@ const handleSubmit = (e) => {
                     updatAllReviewsResult()
                 })
             }
-            else if (rateData.value.includes(true) ) {
+            else if (rateData.value.lastIndexOf(true) > 0 ) {
                 rateR({
                     recipeId: props.recipeId,
                     userId: store.state.user.id,
-                    rateValue: rateData.value.lastIndexOf(true) -1
+                    rateValue: rateData.value.lastIndexOf(true)
                 }).then(result => {
                     refetch();
                     props.updatReviews()
@@ -115,7 +115,7 @@ const rate = (index) => {
 
             <div class="flex items-center w-full mb-2">
                 <h3 class="font-bold pr-1">Rate</h3>
-                <div v-for="i in [1,2,3,4,5]" :key="i" class="text-dark_orange px-1 cursor-pointer" @click="rate(i)">
+                <div v-for="i in 5" :key="i" class="text-dark_orange px-1 cursor-pointer" @click="rate(i)">
                     <IconStar v-if="rateData[i]" :fill="true" class="w-[1.35rem] h-[1.35rem]" />
                     <IconStar v-else class="w-[1.35rem] h-[1.35rem]" />
                 </div>
@@ -145,7 +145,7 @@ const rate = (index) => {
                 :key="i">
                 <h2 class="font-bold">{{ review?.user?.username }}</h2>
                 <div class="flex items-center" v-if="review?.rate > 0" >
-                    <IconStar v-for="i in [1,2,3,4,5]" :key="i" :fill="i <= review?.rate ? true : null"
+                    <IconStar v-for="i in 5" :key="i" :fill="i <= review?.rate ? true : null"
                         class="text-dark_orange px-0.5 w-5 h-5" />
                 </div>
                 <p class="px-0.5">{{ review?.comment }}</p>
