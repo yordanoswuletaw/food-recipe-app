@@ -50,7 +50,7 @@ const gotoDetails = ()=>{
 <template>
     <div
     
-        class="group max-w-sm h-[19rem]  bg-white bg-opacity-80 relative shadow rounded-lg  hover:shadow hover:bg-opacity-100 cursor-pointer group backdrop-blur-xl transition duration-500 ease-in-out">
+        class="group w-full h-[19rem]  bg-white bg-opacity-80 relative shadow rounded-lg  hover:shadow hover:bg-opacity-100 cursor-pointer group backdrop-blur-xl transition duration-500 ease-in-out">
         <img class="w-full h-[8.5rem] rounded-t-lg object-cover" :src="recipe.featured_image" />
 
         <button type="button" @click="bookmarkRecipe"
@@ -59,11 +59,10 @@ const gotoDetails = ()=>{
             </button>
 
         <div class="px-3 py-2">
-            <h5 class=" text-gray-900 w-[14rem] truncate mb-2 text-md font-bold tracking-tight break-all">{{ recipe.title
+            <h5 class=" text-gray-900 w-full truncate mb-2 text-md font-bold tracking-tight break-all">{{ recipe.title
             }}</h5>
 
-            <p class="text-sm overflow-hidden mb-0.5 w-[14rem]  h-[2.4rem]  text-black break-all">{{
-                    recipe.description.length > 67 ? `${recipe.description.slice(0, 67)}...` : recipe.description
+            <p class="text-sm overflow-hidden mb-0.5 w-full  h-[2.4rem]  text-black break-all">{{ recipe.description
             }}</p>
         </div>
 
