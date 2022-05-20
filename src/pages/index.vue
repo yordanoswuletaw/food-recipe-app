@@ -98,8 +98,8 @@ const scrollBar = ref(null)
   <RecipeNotFound v-else-if="error || filterRecipesResult?.length <= 0" message="No Recipes Found"/>
 
   <div v-else
-    class="grid p-2 gap-2 place-items-center w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-    <div v-for="recipe in filterRecipesResult" :key="recipe.id" class="max-w-sm">
+    class="grid p-2 gap-4 place-items-center w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+    <div v-for="recipe in filterRecipesResult" :key="recipe.id">
       <RecipeCard :recipe="recipe" />
     </div>
   </div>
