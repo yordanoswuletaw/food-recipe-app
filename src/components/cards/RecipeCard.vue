@@ -83,7 +83,7 @@ const gotoDetails = ()=>{
             </div>
         </div>
 
-        <div class="flex items-center justify-between min-w-full">
+        <div class="flex items-center justify-start min-w-full">
             <div @click="gotoDetails"
                 class="border ml-1 focus:outline-none font-medium flex items-center rounded-lg text-sm px-5 py-2 text-center  mr-2 mb-2 transition-colors duration-50 ease-out text-gray-900 hover:font-bold">
                 View Details
