@@ -99,7 +99,7 @@ const scrollBar = ref(null)
 
   <div v-else
     class="grid p-3 gap-4 place-items-center w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-    <div v-for="recipe in filterRecipesResult" :key="recipe.id">
+    <div v-for="recipe in filterRecipesResult" :key="recipe.id" class="w-full">
       <RecipeCard :recipe="recipe" />
     </div>
   </div>
