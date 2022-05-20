@@ -59,8 +59,7 @@ const gotoDetails = ()=>{
             </button>
 
         <div class="px-3 py-2">
-            <h5 class=" text-gray-900 w-[14rem] truncate  mb-2 text-md font-bold tracking-tight break-all">{{ recipe.title.length
-                    > 22 ? `${recipe.title.slice(0, 22)}...` : recipe.title
+            <h5 class=" text-gray-900 w-[14rem] truncate  mb-2 text-md font-bold tracking-tight break-all">{{ recipe.title
             }}</h5>
 
             <p class="text-sm overflow-hidden mb-0.5 w-[14rem]  h-[2.4rem]  text-black break-all">{{
