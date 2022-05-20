@@ -115,7 +115,7 @@ const rate = (index) => {
 
             <div class="flex items-center w-full mb-2">
                 <h3 class="font-bold pr-1">Rate</h3>
-                <div v-for="i in 5" :key="i" class="text-dark_orange px-1 cursor-pointer" @click="rate(i)">
+                <div v-for="i in [0,1,2,3,4,5]" :key="i" class="text-dark_orange px-1 cursor-pointer" @click="rate(i)">
                     <IconStar v-if="rateData[i]" :fill="true" class="w-[1.35rem] h-[1.35rem]" />
                     <IconStar v-else class="w-[1.35rem] h-[1.35rem]" />
                 </div>
