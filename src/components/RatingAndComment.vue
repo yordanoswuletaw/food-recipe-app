@@ -53,7 +53,7 @@ const handleSubmit = (e) => {
                 rateR({
                     recipeId: props.recipeId,
                     userId: store.state.user.id,
-                    rateValue: rateData.value.lastIndexOf(true)
+                    rateValue: rateData.value.lastIndexOf(true) -1
                 })
                 commentR({
                     recipeId: props.recipeId,
@@ -65,11 +65,11 @@ const handleSubmit = (e) => {
                     updatAllReviewsResult()
                 })
             }
-            else if (rateData.value.includes(true)) {
+            else if (rateData.value.includes(true) ) {
                 rateR({
                     recipeId: props.recipeId,
                     userId: store.state.user.id,
-                    rateValue: rateData.value.lastIndexOf(true)
+                    rateValue: rateData.value.lastIndexOf(true) -1
                 }).then(result => {
                     refetch();
                     props.updatReviews()
@@ -115,7 +115,7 @@ const rate = (index) => {
 
             <div class="flex items-center w-full mb-2">
                 <h3 class="font-bold pr-1">Rate</h3>
-                <div v-for="i in [1,2,3,4, 5]" :key="i" class="text-dark_orange px-1 cursor-pointer" @click="rate(i)">
+                <div v-for="i in [1,2,3,4,5]" :key="i" class="text-dark_orange px-1 cursor-pointer" @click="rate(i)">
                     <IconStar v-if="rateData[i]" :fill="true" class="w-[1.35rem] h-[1.35rem]" />
                     <IconStar v-else class="w-[1.35rem] h-[1.35rem]" />
                 </div>
