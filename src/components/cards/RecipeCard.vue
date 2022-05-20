@@ -50,7 +50,7 @@ const gotoDetails = ()=>{
 <template>
     <div
     
-        class="group h-[19rem]  bg-white bg-opacity-80 relative shadow rounded-lg  hover:shadow hover:bg-opacity-100 cursor-pointer group backdrop-blur-xl transition duration-500 ease-in-out">
+        class="group h-[19rem] w-full  bg-white bg-opacity-80 relative shadow rounded-lg  hover:shadow hover:bg-opacity-100 cursor-pointer group backdrop-blur-xl transition duration-500 ease-in-out">
         <img class="w-full h-[8.5rem] rounded-t-lg object-cover" :src="recipe.featured_image" />
 
         <button type="button" @click="bookmarkRecipe"
