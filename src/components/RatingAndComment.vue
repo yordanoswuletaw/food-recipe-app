@@ -39,7 +39,7 @@ watchEffect(() => {
     if (myReviewsData.value?.length > 0) {
         comment.value = myReviewsData.value[0]?.comment
         ratePoint.value = myReviewsData.value[0]?.rate;
-        rateData.value = [1, 2, 3, 4, 5, 6].map((each) => {
+        rateData.value = [0, 1, 2, 3, 4, 5].map((each) => {
             if (ratePoint.value >= each) return true
             else return false;
         })
