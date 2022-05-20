@@ -62,7 +62,8 @@ const gotoDetails = ()=>{
             <h5 class=" text-gray-900 w-full truncate mb-2 text-md font-bold tracking-tight break-all">{{ recipe.title
             }}</h5>
 
-            <p class="text-sm overflow-hidden mb-0.5 w-full truncate  h-[2.4rem]  text-black break-all">{{recipe.description
+            <p class="text-sm overflow-hidden mb-0.5 w-full  h-[2.4rem]  text-black break-all">{{
+                    recipe.description.length > 117 ? `${recipe.description.slice(0, 117)}...` : recipe.description
             }}</p>
         </div>
 
@@ -82,7 +83,7 @@ const gotoDetails = ()=>{
             </div>
         </div>
 
-        <div class="flex items-center min-w-full">
+        <div class="flex items-center justify-end min-w-full">
             <div @click="gotoDetails"
                 class="border ml-1 focus:outline-none font-medium flex items-center rounded-lg text-sm px-5 py-2 text-center  mr-2 mb-2 transition-colors duration-50 ease-out text-gray-900 hover:font-bold">
                 View Details
