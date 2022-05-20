@@ -62,7 +62,7 @@ const gotoDetails = ()=>{
             <h5 class=" text-gray-900 w-full truncate mb-2 text-md font-bold tracking-tight break-all">{{ recipe.title
             }}</h5>
 
-            <p class="text-sm overflow-hidden mb-0.5 w-full  h-[2.4rem]  text-black break-all">{{ recipe.description
+            <p class="text-sm overflow-hidden mb-0.5 w-full truncate  h-[2.4rem]  text-black break-all">{{ recipe.description
             }}</p>
         </div>
 
