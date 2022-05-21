@@ -26,7 +26,7 @@ const editStep = (id) => {
 function onInvalidSubmit({ values, errors, results }) {
 }
 const onAddStep = handleSubmit((values) => {
-    if (editKey)
+    if (editKey !== null)
         recipe.value.steps.splice(editKey, 0, values.description);
     else recipe.value.steps.push(values.description);
     editKey = null;
