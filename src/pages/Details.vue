@@ -75,7 +75,7 @@ const changeSrc = (index) => {
         </TextIconBtn>
       </div>
       <div class="px-3 font-bold">Description: </div>
-      <p class="indent-3 px-3 pb-3 break-all lg:w-[50%] w-full"> {{ recipeDetailResult?.description }}</p>
+      <p class="indent-3 px-3 pb-3 break-all w-[100%]"> {{ recipeDetailResult?.description }}</p>
 
         <div
           class="py-2 px-3 flex items-center justify-start gap-2 flex-wrap rounded-t-md">
@@ -107,7 +107,7 @@ const changeSrc = (index) => {
       <div class="py-3">
         <h2 class="font-bold text-xl px-12">Cook's Notes</h2>
 
-        <p class="ml-4 break-all w-full lg:w-[50%]" v-if="recipeDetailResult?.cooks_note">
+        <p class="ml-4 break-all w-[100%]" v-if="recipeDetailResult?.cooks_note">
           {{recipeDetailResult?.cooks_note}}
         </p>
         <p v-else class="ml-4 pl-12">
