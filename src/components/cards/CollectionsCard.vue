@@ -41,7 +41,7 @@ const gotoDetails = () => {
     <div class="flex flex-col items-center pb-2">
       <img class="mb-3 w-24 h-24 rounded-full shadow-lg" :src="recipe.featured_image" alt="Bonnie image">
       <h5 class=" w-[15rem] text-center mb-2 px-2 text-xl font-medium text-gray-900">{{ recipe.title.length
-          > 20 ? `${recipe.title.slice(0, 20)}...` : recipe.title
+          > 16 ? `${recipe.title.slice(0, 16)}...` : recipe.title
       }}</h5>
       <div
         class="text-dark_orange group-hover:text-white_soft px-0.5 h-fit flex items-center rounded-full font-semibold text-sm">
