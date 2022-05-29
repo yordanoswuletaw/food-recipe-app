@@ -8,7 +8,7 @@
             <IconRight class="mr-0.5 text-dark_green" /> Step #{{ i+1 }}
 
           </div>
-          <p class="font-semibold pl-0.5 mx-2 mb-2 indent-0">{{stp}}</p>
+          <p class="font-semibold pl-0.5 mx-2 mb-2 indent-0 break-all w-[96%]">{{stp}}</p>
 
         </div>
       </div>

@@ -6,7 +6,7 @@
             class="bg-gray-900  text-white_soft h-8 min-w-[2rem] flex items-center justify-center rounded-full font-semibold">
             #{{i+1}}
             </div>
-          <h4 class="font-semibold ml-3"> {{ing}}
+          <h4 class="font-semibold ml-3 break-all w-[calc(96% - 2.5rem)]"> {{ing}}
           </h4>
         </div>
       </div>
