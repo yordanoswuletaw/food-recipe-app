@@ -56,7 +56,7 @@ const changeSrc = (index) => {
         </div>
       </div>
 
-      <h2 class="p-3 font-bold text-2xl flex items-center justify-between break-all">
+      <h2 class="p-3 mr-3 font-bold text-2xl flex items-center justify-between break-all">
         <h2> {{ recipeDetailResult?.title }}</h2>
         <p class="font-semibold text-base">{{ recipeDetailResult?.category }}</p>
       </h2>

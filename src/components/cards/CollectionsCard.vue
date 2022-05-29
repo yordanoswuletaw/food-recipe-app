@@ -49,7 +49,7 @@ const gotoDetails = () => {
         <p class="px-0.5">{{ recipe.time }}</p>
       </div>
       <p class="text-sm text-center mb-2 w-[15rem] px-2 h-[2.4rem] break-all">{{
-          recipe.description.length > 55 ? `${recipe.description.slice(0, 55)}...` : recipe.description
+          recipe.description.length > 50 ? `${recipe.description.slice(0, 50)}...` : recipe.description
       }}</p>
       <div class="flex mt-2 items-center justify-evenly w-full">
         <Button type="button" @click="gotoDetails" class="w-24 h-9" btnName="Details" />
