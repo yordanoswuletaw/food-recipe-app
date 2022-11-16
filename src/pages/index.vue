@@ -67,7 +67,7 @@ const scrollBar = ref(null)
   </div>
 
   <h1 class="text-2xl w-full text-center my-1.5 font-bold text-gray-900 text-opacity-95">
-    <span class="text-orange-400">Categories </span>{{ currentCategory }}
+    <span class="text-orange-400">[Categories] </span>{{ currentCategory }}
   </h1>
 
   <div class="relative group overflow-hidden w-full py- flex items-center justify-center">

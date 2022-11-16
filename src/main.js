@@ -13,14 +13,14 @@ import { DefaultApolloClient } from "@vue/apollo-composable";
 import { WebSocketLink } from "@apollo/client/link/ws";
 import { getMainDefinition } from "@apollo/client/utilities";
 import { setContext } from "@apollo/client/link/context";
-import {refresh} from './axios/'
+import { refresh } from "./axios/";
 
 const httpLink = new HttpLink({
-  uri: "https://food-recipe-app-v1.herokuapp.com/v1/graphql",
+  uri: "https://food-recipe-app-et.hasura.app/v1/graphql",
 });
 
 const wsLink = new WebSocketLink({
-  uri: "wss://food-recipe-app-v1.herokuapp.com/v1/graphql",
+  uri: "wss://food-recipe-app-et.hasura.app/v1/graphql",
   options: {
     reconnect: true,
   },
@@ -38,7 +38,7 @@ const link = split(
 const cache = new InMemoryCache();
 
 const authLink = setContext((_, { headers }) => {
-  const token = store.state.accessToken
+  const token = store.state.accessToken;
   return {
     headers: {
       ...headers,
@@ -47,9 +47,9 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
-refresh().then(data => {
+refresh().then((data) => {
   store.dispatch("SET_USER", data.user);
-  store.dispatch('SET_ACCESS_TOKEN', data.accessToken)
+  store.dispatch("SET_ACCESS_TOKEN", data.accessToken);
   const apolloClient = new ApolloClient({
     link: authLink.concat(link),
     cache,
@@ -59,14 +59,11 @@ refresh().then(data => {
     setup() {
       provide(DefaultApolloClient, apolloClient);
     },
-  
+
     render: () => h(App),
   });
-  
+
   app.use(router).use(store);
-  
+
   app.mount("#app");
-})
-
-
-
+});

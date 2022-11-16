@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://hidden-citadel-79901.herokuapp.com/";
+const baseURL = "https://food-recipe-api-et.onrender.com/";
 
 const app = axios.create({
   baseURL,
