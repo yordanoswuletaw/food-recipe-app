@@ -87,7 +87,7 @@ const gotoDetails = ()=>{
             <div @click="gotoDetails"
                 class="border ml-1 focus:outline-none font-medium flex items-center rounded-lg text-sm px-5 py-2 text-center  mr-2 mb-2 transition-colors duration-50 ease-out text-gray-900 hover:font-bold">
                 View Details
-                <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                <svg class="ml-2 -mr-1 w-4 h-4 sm:block hidden" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
